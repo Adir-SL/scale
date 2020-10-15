@@ -47,3 +47,6 @@ function gotoGithub(){
 function gotoDemo(){
     window.location.href = "https://github.com/Adir-SL/scale";
 }
+function printf(x){
+    console.log(x);
+}
