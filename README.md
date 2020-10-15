@@ -19,11 +19,11 @@ scaleHelp();
 ```
 
 # How to Get Started
-The simplest way to get started is by linking the Javascipt file in `HEAD` part of your document, as such:
+The simplest way to get started is by linking the Javascipt file in `Head` part of your document, as such:
 
 ```
 <head>
-<script src="scaleAPI.js"></scirpt>
+    <script src="scaleAPI.js"></scirpt>
 </head>
 ```
 
