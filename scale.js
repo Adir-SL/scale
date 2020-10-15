@@ -3,6 +3,7 @@ function resizeFunc(e) {
         document.getElementById("newHeight").value = document.getElementById("origHeight").value;
         document.getElementById("newWidth").value = document.getElementById("origWidth").value;
     }else{
+
         if (e.target.id == "newWidth") {
             //Calculate HEIGHT;
             scaleAPI(document.getElementById("origWidth").value, document.getElementById("origHeight").value, document.getElementById("newWidth").value, 0);
@@ -17,6 +18,7 @@ function resizeFunc(e) {
     zoomFunc();
     
     if (document.body.offsetWidth < 900) {
+
         if (eval(document.getElementById("origWidth").value) > 350) {
             console.log('For MOBILE');
             percent = (eval(document.getElementById("origWidth").value) / 94);
@@ -43,6 +45,7 @@ function zoomFunc() {
 
 function gotoGithub(){
     window.location.href = "https://adir-sl.github.io/scale";
+    
     /*
     This is maintained by Adir SL,
     for any bugs or feature requests
