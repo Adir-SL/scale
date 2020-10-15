@@ -119,6 +119,13 @@
         bottom: 14vmin;
         right: 14vmin;
     }
+    .gitLogo{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 44px;
+        cursor: pointer;
+    }
     
     @media screen and (max-width: 900px) {
         h1 {
