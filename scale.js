@@ -44,8 +44,8 @@ function zoomFunc() {
 }
 
 function gotoGithub(){
-    window.location.href = "https://adir-sl.github.io/scale";
-    
+    window.location.href = "https://github.com/Adir-SL/scale";
+
     /*
     This is maintained by Adir SL,
     for any bugs or feature requests
@@ -54,9 +54,12 @@ function gotoGithub(){
 }
 
 function gotoDemo(){
-    window.location.href = "https://github.com/Adir-SL/scale";
+    window.location.href = "https://adir-sl.github.io/scale";
 }
 
 function printf(x){
     console.log(x);
+}
+function addLogo(){
+    document.body.innerHTML += "<img class='gitLogo' src='github.png' / style='position:absolute; right: 0; top: 0;margin: 44px; cursor:pointer;' onclick='gotoGithub();'>"
 }

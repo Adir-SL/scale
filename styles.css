@@ -153,3 +153,10 @@
             display: none;
         }
     }
+    @media screen and (max-width: 500px) {
+        .gitLogo{
+            width: 10vmin;
+            height: 10vmin;
+            margin: 80px !important;
+        }
+    }
