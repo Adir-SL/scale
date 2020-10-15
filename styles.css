@@ -23,7 +23,7 @@
     }
     
     input {
-        width: 3em !important;
+        min-width: 3em !important;
     }
     
     .input,
