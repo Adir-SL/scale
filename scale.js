@@ -16,7 +16,7 @@ function resizeFunc(e) {
     zoomFunc();
     if (document.body.offsetWidth < 900) {
         if (eval(document.getElementById("origWidth").value) > 350) {
-            //For MOBILE;
+            console.log('For MOBILE');
             percent = (eval(document.getElementById("origWidth").value) / 94);
             document.getElementById("origDiv").style.height = eval(document.getElementById("origHeight").value) / percent + "vw";
         }
