@@ -26,7 +26,6 @@ function resizeFunc(e) {
         }
     }
 }
-
 function zoomFunc() {
     //This determines the Zoom Level;
     zoomPercent = 100 / eval(document.getElementById("zoomSelect").value.slice(0, -1));
