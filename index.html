@@ -17,12 +17,9 @@
     <meta property="og:image" content="https://adir-sl.github.io/scale/social_1.jpg" />
     <script src="scaleAPI.js"></script>
     <script src="scale.js"></script>
-    <script>
-        scaleHelp();
-    </script>
 </head>
 
-<body>
+<body onload="scaleHelp();">
     <div class="backDiv"></div>
     <h1>Proportional Scale</h1>
     <select id="zoomSelect" onchange="zoomFunc();" title="Zoom level">
