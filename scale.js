@@ -37,11 +37,13 @@ function zoomFunc() {
     document.getElementById("newDiv").style.width = document.getElementById("newWidth").value / zoomPercent + "px";
 }
 function gotoGithub(){
-    window.location.href = "https://adir-sl.github.io/scale"
-    window.location.href = "https://github.com/Adir-SL/scale"
+    window.location.href = "https://adir-sl.github.io/scale";
     /*
     This is maintained by Adir SL,
     for any bugs or feature requests
     you can use Github or Twitter (@adircode)
     */
+}
+function gotoDemo(){
+    window.location.href = "https://github.com/Adir-SL/scale";
 }
