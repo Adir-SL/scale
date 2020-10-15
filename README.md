@@ -1,5 +1,6 @@
 # Demo
 A simple API for calculating Proportional Scale, to see a working demo, please click here:
+
 https://adir-sl.github.io/scale
 
 # Welcome to Proportinal Scale
