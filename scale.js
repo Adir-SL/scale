@@ -32,3 +32,7 @@ function zoomFunc() {
     document.getElementById("newDiv").style.height = document.getElementById("newHeight").value / zoomPercent + "px";
     document.getElementById("newDiv").style.width = document.getElementById("newWidth").value / zoomPercent + "px";
 }
+function gotoGithub(){
+    window.location.href = "https://adir-sl.github.io/scale"
+    window.location.href = "https://github.com/Adir-SL/scale"
+}
