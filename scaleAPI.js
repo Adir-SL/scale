@@ -1,3 +1,10 @@
+/*
+
+for more information:
+https://github.com/Adir-SL/scale
+
+*/
+
 function scaleAPI(a, b, x, y) {
     if (x == "") {
         percent = y / b;
