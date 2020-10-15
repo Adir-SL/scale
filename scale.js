@@ -13,19 +13,24 @@ function resizeFunc(e) {
             document.getElementById("newWidth").value = window.newWidth;
         }
     }
+
     zoomFunc();
+    
     if (document.body.offsetWidth < 900) {
         if (eval(document.getElementById("origWidth").value) > 350) {
             console.log('For MOBILE');
             percent = (eval(document.getElementById("origWidth").value) / 94);
             document.getElementById("origDiv").style.height = eval(document.getElementById("origHeight").value) / percent + "vw";
         }
+
         if (eval(document.getElementById("newWidth").value) > 350) {
             percent = (eval(document.getElementById("newWidth").value) / 94);
             document.getElementById("newDiv").style.height = eval(document.getElementById("newHeight").value) / percent + "vw";
         }
     }
+
 }
+
 function zoomFunc() {
     //This determines the Zoom Level;
     zoomPercent = 100 / eval(document.getElementById("zoomSelect").value.slice(0, -1));
@@ -35,6 +40,7 @@ function zoomFunc() {
     document.getElementById("newDiv").style.height = document.getElementById("newHeight").value / zoomPercent + "px";
     document.getElementById("newDiv").style.width = document.getElementById("newWidth").value / zoomPercent + "px";
 }
+
 function gotoGithub(){
     window.location.href = "https://adir-sl.github.io/scale";
     /*
@@ -43,9 +49,11 @@ function gotoGithub(){
     you can use Github or Twitter (@adircode)
     */
 }
+
 function gotoDemo(){
     window.location.href = "https://github.com/Adir-SL/scale";
 }
+
 function printf(x){
     console.log(x);
 }
