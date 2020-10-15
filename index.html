@@ -34,15 +34,15 @@
     <div class="wrapper">
         <div class="innerDiv">
             <div class="areaDiv">
-                Width:<input class="input" id="origWidth" type="number" value="400" oninput="resizeFunc(event);" />
-                Height:<input class="input" id="origHeight" type="number" value="300" oninput="resizeFunc(event);" />
+                Width:<input class="input" id="origWidth" type="text" pattern="\d*" value="400" oninput="resizeFunc(event);" />
+                Height:<input class="input" id="origHeight" type="text" pattern="\d*" value="300" oninput="resizeFunc(event);" />
             </div>
             <div class="canvas" id="origDiv"></div>
         </div>
         <div class="innerDiv">
             <div class="areaDiv">
-                New width:<input class="input" id="newWidth" type="number" value="800" oninput="resizeFunc(event);" /> New
-                height:<input class="input" id="newHeight" type="number" value="600" oninput="resizeFunc(event);" />
+                New width:<input class="input" id="newWidth" type="text" pattern="\d*" value="800" oninput="resizeFunc(event);" /> New
+                height:<input class="input" id="newHeight" type="text" pattern="\d*" value="600" oninput="resizeFunc(event);" />
             </div>
             <div class="canvas" id="newDiv"></div>
         </div>
