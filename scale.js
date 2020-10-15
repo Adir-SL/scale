@@ -35,4 +35,9 @@ function zoomFunc() {
 function gotoGithub(){
     window.location.href = "https://adir-sl.github.io/scale"
     window.location.href = "https://github.com/Adir-SL/scale"
+    /*
+    This is maintained by Adir SL,
+    for any bugs or feature requests
+    you can use Github or Twitter (@adircode)
+    */
 }
