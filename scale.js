@@ -4,9 +4,11 @@ function resizeFunc(e) {
         document.getElementById("newWidth").value = document.getElementById("origWidth").value;
     }else{
         if (e.target.id == "newWidth") {
+            //Calculate HEIGHT;
             scaleAPI(document.getElementById("origWidth").value, document.getElementById("origHeight").value, document.getElementById("newWidth").value, 0);
             document.getElementById("newHeight").value = window.newHeight;
         }else{
+            //Calculate WIDTH;
             scaleAPI(document.getElementById("origWidth").value, document.getElementById("origHeight").value, 0, document.getElementById("newHeight").value);
             document.getElementById("newWidth").value = window.newWidth;
         }
@@ -14,6 +16,7 @@ function resizeFunc(e) {
     zoomFunc();
     if (document.body.offsetWidth < 900) {
         if (eval(document.getElementById("origWidth").value) > 350) {
+            //For MOBILE;
             percent = (eval(document.getElementById("origWidth").value) / 94);
             document.getElementById("origDiv").style.height = eval(document.getElementById("origHeight").value) / percent + "vw";
         }
@@ -25,6 +28,7 @@ function resizeFunc(e) {
 }
 
 function zoomFunc() {
+    //This determines the Zoom Level;
     zoomPercent = 100 / eval(document.getElementById("zoomSelect").value.slice(0, -1));
     document.getElementById("origDiv").style.height = document.getElementById("origHeight").value / zoomPercent + "px";
     document.getElementById("origDiv").style.width = document.getElementById("origWidth").value / zoomPercent + "px";
