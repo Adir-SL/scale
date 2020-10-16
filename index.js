@@ -66,5 +66,6 @@ function printf(x){
     console.log(x);
 }
 function addLogo(){
+    //Adding the Github mark (Logo);
     document.body.innerHTML += "<img class='gitLogo' src='github.png' style='position:absolute; right: 0; top: 0;margin: 44px; cursor:pointer;' onclick='gotoGithub();' />";
 }
