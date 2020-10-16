@@ -28,4 +28,4 @@ The simplest way to get started is by linking the Javascipt file in `Head` part 
 </head>
 ```
 
-from there you can call the help function or jus start to calculating your scales, as shown in the "Welcom" section of this ducument.
+from there you can call the help function or jus start to calculating your scales, as shown in the "Welcome" section of this document.

@@ -1,3 +1,10 @@
+/*
+
+for more information:
+https://github.com/Adir-SL/scale
+
+*/
+
 function resizeFunc(e) {
     if (e.target.id == "origWidth" || e.target.id == "origHeight") {
         document.getElementById("newHeight").value = document.getElementById("origHeight").value;
