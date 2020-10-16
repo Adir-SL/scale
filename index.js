@@ -62,8 +62,11 @@ function gotoDemo(){
     window.location.href = "https://adir-sl.github.io/scale";
 }
 
-function printf(x){
-    console.log(x);
+function printf(r){
+    console.log(r);
+}
+function Toast(s){
+    alert(s);
 }
 function addLogo(){
     //Adding the Github mark (Logo);
