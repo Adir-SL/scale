@@ -62,6 +62,12 @@ function gotoDemo(){
     window.location.href = "https://adir-sl.github.io/scale";
 }
 
+function gotoTwitter(){
+    window.location.href = "https://twitter.com/adircode";
+    //Please follow me on Twitter;
+    //For questions, DM me, thanks!
+}
+
 function addLogo(){
     //Adding the Github mark (Logo);
     document.body.innerHTML += "<img class='gitLogo' src='github.png' style='position:absolute; right: 0; top: 0;margin: 44px; cursor:pointer;' onclick='gotoGithub();' />";
@@ -74,6 +80,6 @@ function printf(r){
 function Toast(s){
     alert(s);
 }
-function toast(s){
-    alert(s);
+function toast(t){
+    alert(t);
 }
