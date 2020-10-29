@@ -67,7 +67,10 @@ function gotoTwitter(){
     //Please follow me on Twitter;
     //For questions, DM me, thanks!
 }
-
+function gotoWebsite(){
+    window.location.href = "https://www.adir.dev";
+    //Link to visit my website;
+}
 function addLogo(){
     //Adding the Github mark (Logo);
     document.body.innerHTML += "<img class='gitLogo' src='github.png' style='position:absolute; right: 0; top: 0;margin: 44px; cursor:pointer;' onclick='gotoGithub();' />";
