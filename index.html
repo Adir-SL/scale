@@ -22,7 +22,7 @@
 <body onload="scaleHelp();">
     <div class="backDiv"></div>
     <h1>Proportional Scale</h1>
-    <select id="zoomSelect" onchange="zoomFunc();" title="Zoom level">
+    <!-- <select id="zoomSelect" onchange="zoomFunc();" title="Zoom level">
         <option>10%</option>
         <option>25%</option>
         <option>50%</option>
@@ -32,7 +32,10 @@
         <option>200%</option>
         <option>400%</option>
         <option>1000%</option>
-    </select>
+    </select> -->
+    <div class="zoomDiv">
+        Zoom level: <button onclick="window.zoom='10';zoomFunc();">10%</button><button onclick="window.zoom='25';zoomFunc();">25%</button><button onclick="window.zoom='50';zoomFunc();">50%</button><button onclick="window.zoom='75';zoomFunc();">75%</button><button onclick="window.zoom='100';zoomFunc();">100%</button><button onclick="window.zoom='150';zoomFunc();">150%</button><button onclick="window.zoom='200';zoomFunc();">200%</button><button onclick="window.zoom='400';zoomFunc();">400%</button><button onclick="window.zoom='1000';zoomFunc();">1000%</button>
+    </div>
     <div class="wrapper">
         <div class="innerDiv">
             <div class="areaDiv">

@@ -4,7 +4,7 @@
         color: #DDDDDD;
         background-color: #090B46;
     }
-    
+
     .canvas {
         width: 400px;
         height: 300px;
@@ -15,15 +15,14 @@
         box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.1), 0 8px 16px 0 rgba(0, 0, 0, 0.3);
         transition: all 300ms ease-in-out;
     }
-    
+
     #newDiv {
         background-color: #E38FF8;
         width: 800px;
         height: 600px;
     }
-    
-    .input,
-    select {
+
+    .input, select {
         padding: 8px;
         border-radius: 4px;
         background-color: #cecece;
@@ -34,32 +33,30 @@
         font-weight: normal;
         font-size: 1em;
     }
-    
-    pre,
-    select {
+
+    pre, select {
         margin: 0 0 2em 44px;
     }
-    
+
     .input {
         margin: 2px;
         display: inline-block;
     }
-    
+
     input {
         width: 4em;
     }
-    
-    select:focus,
-    .input:focus {
+
+    select:focus, .input:focus {
         background-color: #ffffff;
         border: 1px solid #55b5db;
         color: #000000;
     }
-    
+
     .input br {
         display: none;
     }
-    
+
     h1 {
         font-family: 'Sansita Swashed', cursive;
         font-size: 4em;
@@ -68,7 +65,37 @@
         margin-left: 44px;
         width: fit-content;
     }
-    
+
+    .zoomDiv {
+        margin-left: 44px;
+    }
+
+    button {
+        margin: 8px;
+        padding: 8px;
+        border-radius: 4px;
+        outline: none;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    button:hover {
+        opacity: 0.7;
+    }
+
+    button:focus {
+        opacity: 1;
+    }
+
+    button:active {
+        opacity: 1;
+        color: #090B46;
+        background-color: #ffffff;
+    }
+
     .wrapper {
         position: relative;
         margin-left: 44px;
@@ -77,23 +104,21 @@
         flex-wrap: wrap;
         justify-content: flex-start;
     }
-    
+
     .wrapper .innerDiv {
         margin-right: 40px;
     }
-    
+
     .areaDiv {
         padding: 8px;
         border-bottom: 2px solid #9458DF;
     }
-    
+
     .areaDiv:nth-of-type(2) {
         border-color: #E38FF8;
     }
-    
-    .backDiv,
-    .backDiv::before,
-    .backDiv::after {
+
+    .backDiv, .backDiv::before, .backDiv::after {
         position: absolute;
         width: 21vmin;
         height: 21vmin;
@@ -102,7 +127,7 @@
         background-color: #090B46;
         border: 1px solid #DDDDDD;
     }
-    
+
     .backDiv::before {
         content: '';
         width: 18vmin;
@@ -110,7 +135,7 @@
         bottom: 7vmin;
         right: 7vmin;
     }
-    
+
     .backDiv::after {
         content: '';
         width: 14vmin;
@@ -118,14 +143,23 @@
         bottom: 14vmin;
         right: 14vmin;
     }
-    .gitLogo{
+
+    .gitLogo {
         position: absolute;
         right: 0;
         top: 0;
         margin: 44px;
         cursor: pointer;
     }
-    
+
+    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
     @media screen and (max-width: 900px) {
         h1 {
             margin-left: 0;
@@ -139,8 +173,7 @@
             width: 90vw;
             justify-content: space-between;
         }
-        pre,
-        select {
+        pre, select {
             display: none;
         }
         .innerDiv {
@@ -162,8 +195,9 @@
             width: 3em !important;
         }
     }
+
     @media screen and (max-width: 500px) {
-        .gitLogo{
+        .gitLogo {
             width: 10vmin;
             height: 10vmin;
             margin: 80px !important;

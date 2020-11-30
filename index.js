@@ -46,7 +46,7 @@ function resizeFunc(e) {
 
 function zoomFunc() {
     //This determines the Zoom Level;
-    zoomPercent = 100 / eval(document.getElementById("zoomSelect").value.slice(0, -1));
+    zoomPercent = 100 / window.zoom;
     document.getElementById("origDiv").style.height = document.getElementById("origHeight").value / zoomPercent + "px";
     document.getElementById("origDiv").style.width = document.getElementById("origWidth").value / zoomPercent + "px";
 
@@ -86,3 +86,4 @@ function Toast(s){
 function toast(t){
     alert(t);
 }
+window.zoom = 100;
