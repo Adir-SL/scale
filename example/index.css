@@ -173,7 +173,7 @@
             width: 90vw;
             justify-content: space-between;
         }
-        pre, select {
+        pre, select, .zoomDiv {
             display: none;
         }
         .innerDiv {
