@@ -13,13 +13,13 @@ function resizeFunc(e) {
     if (e.target.id == "origWidth" || e.target.id == "origHeight") {
         document.getElementById("newHeight").value = document.getElementById("origHeight").value;
         document.getElementById("newWidth").value = document.getElementById("origWidth").value;
-    }else{
+    } else {
 
         if (e.target.id == "newWidth") {
             //Calculate HEIGHT;
             scaleAPI(document.getElementById("origWidth").value, document.getElementById("origHeight").value, document.getElementById("newWidth").value, 0);
             document.getElementById("newHeight").value = window.newHeight;
-        }else{
+        } else {
             //Calculate WIDTH;
             scaleAPI(document.getElementById("origWidth").value, document.getElementById("origHeight").value, 0, document.getElementById("newHeight").value);
             document.getElementById("newWidth").value = window.newWidth;
@@ -27,7 +27,7 @@ function resizeFunc(e) {
     }
 
     zoomFunc();
-    
+
     if (document.body.offsetWidth < 900) {
 
         if (eval(document.getElementById("origWidth").value) > 350) {
@@ -44,6 +44,14 @@ function resizeFunc(e) {
 
 }
 
+function resetSelection() {
+    var x = document.getElementsByClassName("zoomButton");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].classList.remove("selected");
+    }
+}
+
 function zoomFunc() {
     //This determines the Zoom Level;
     zoomPercent = 100 / window.zoom;
@@ -54,36 +62,36 @@ function zoomFunc() {
     document.getElementById("newDiv").style.width = document.getElementById("newWidth").value / zoomPercent + "px";
 }
 
-function gotoGithub(){
+function gotoGithub() {
     window.location.href = "https://github.com/Adir-SL/scale";
 }
 
-function gotoDemo(){
+function gotoDemo() {
     window.location.href = "https://adir-sl.github.io/scale";
 }
 
-function gotoTwitter(){
+function gotoTwitter() {
     window.location.href = "https://twitter.com/adircode";
     //Please follow me on Twitter;
     //For questions, DM me, thanks!
 }
-function gotoWebsite(){
+function gotoWebsite() {
     window.location.href = "https://www.adir.dev";
     //Link to visit my website;
 }
-function addLogo(){
+function addLogo() {
     //Adding the Github mark (Logo);
     document.body.innerHTML += "<img class='gitLogo' src='github.png' style='position:absolute; right: 0; top: 0;margin: 44px; cursor:pointer;' onclick='gotoGithub();' />";
 }
 
 //Those 3 last functions are for debugging only
-function printf(r){
+function printf(r) {
     console.log(r);
 }
-function Toast(s){
+function Toast(s) {
     alert(s);
 }
-function toast(t){
+function toast(t) {
     alert(t);
 }
 window.zoom = 100;
