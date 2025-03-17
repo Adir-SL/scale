@@ -22,7 +22,8 @@
         height: 600px;
     }
 
-    .input, select {
+    .input,
+    select {
         padding: 8px;
         border-radius: 4px;
         background-color: #cecece;
@@ -34,7 +35,8 @@
         font-size: 1em;
     }
 
-    pre, select {
+    pre,
+    select {
         margin: 0 0 2em 44px;
     }
 
@@ -47,7 +49,8 @@
         width: 4em;
     }
 
-    select:focus, .input:focus {
+    select:focus,
+    .input:focus {
         background-color: #ffffff;
         border: 1px solid #55b5db;
         color: #000000;
@@ -118,7 +121,9 @@
         border-color: #E38FF8;
     }
 
-    .backDiv, .backDiv::before, .backDiv::after {
+    .backDiv,
+    .backDiv::before,
+    .backDiv::after {
         position: absolute;
         width: 21vmin;
         height: 21vmin;
@@ -150,12 +155,16 @@
         top: 0;
         margin: 44px;
         cursor: pointer;
+        width: 64px;
+        height: 64px;
     }
 
-    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
         -webkit-appearance: none;
         margin: 0;
     }
+
     input[type=number] {
         -moz-appearance: textfield;
     }
@@ -167,30 +176,39 @@
             margin-top: 0;
             font-size: 3em;
         }
+
         .wrapper {
             margin-left: 0;
             max-width: unset;
             width: 90vw;
             justify-content: space-between;
         }
-        pre, select, .zoomDiv {
+
+        pre,
+        select,
+        .zoomDiv {
             display: none;
         }
+
         .innerDiv {
             min-width: 94vw;
         }
+
         .canvas {
             max-width: 94vw;
             width: 94vw;
             height: 70.5vw;
         }
+
         #newDiv {
             width: 94vw;
             height: 70.5vw;
         }
+
         .backDiv {
             display: none;
         }
+
         input {
             width: 3em !important;
         }
