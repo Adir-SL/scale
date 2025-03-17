@@ -83,6 +83,7 @@
         background-color: transparent;
         opacity: 0.5;
         cursor: pointer;
+        user-select: none;
     }
 
     button:hover {
@@ -94,6 +95,13 @@
     }
 
     button:active {
+        opacity: 1;
+        color: #090B46;
+        background-color: #ffffff;
+    }
+
+    button.selected {
+        pointer-events: none;
         opacity: 1;
         color: #090B46;
         background-color: #ffffff;
