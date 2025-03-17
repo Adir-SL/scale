@@ -71,6 +71,7 @@
 
     .zoomDiv {
         margin-left: 44px;
+        user-select: none;
     }
 
     button {
@@ -83,7 +84,6 @@
         background-color: transparent;
         opacity: 0.5;
         cursor: pointer;
-        user-select: none;
     }
 
     button:hover {
