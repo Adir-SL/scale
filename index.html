@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,29 +20,45 @@
     <script src="scaleAPI.js"></script>
     <script src="index.js"></script>
 </head>
+
 <body onload="scaleHelp();">
     <div class="backDiv"></div>
     <h1>Proportional Scale</h1>
     <div class="zoomDiv">
-        Zoom level: <button onclick="window.zoom='10';zoomFunc();">10%</button><button onclick="window.zoom='25';zoomFunc();">25%</button><button onclick="window.zoom='50';zoomFunc();">50%</button><button onclick="window.zoom='75';zoomFunc();">75%</button><button onclick="window.zoom='100';zoomFunc();">100%</button><button onclick="window.zoom='150';zoomFunc();">150%</button><button onclick="window.zoom='200';zoomFunc();">200%</button><button onclick="window.zoom='400';zoomFunc();">400%</button><button onclick="window.zoom='1000';zoomFunc();">1000%</button>
+        Zoom level: <button onclick="window.zoom='10';zoomFunc();">10%</button><button
+            onclick="window.zoom='25';zoomFunc();">25%</button><button
+            onclick="window.zoom='50';zoomFunc();">50%</button><button
+            onclick="window.zoom='75';zoomFunc();">75%</button><button
+            onclick="window.zoom='100';zoomFunc();">100%</button><button
+            onclick="window.zoom='150';zoomFunc();">150%</button><button
+            onclick="window.zoom='200';zoomFunc();">200%</button><button
+            onclick="window.zoom='400';zoomFunc();">400%</button><button
+            onclick="window.zoom='1000';zoomFunc();">1000%</button>
     </div>
     <div class="wrapper">
         <div class="innerDiv">
             <div class="areaDiv">
-                Width:<input class="input" id="origWidth" type="number" pattern="[\d]*" inputmode="numeric" value="400" oninput="resizeFunc(event);" />
-                Height:<input class="input" id="origHeight" type="number" pattern="[\d]*" inputmode="numeric" value="300" oninput="resizeFunc(event);" />
+                Width:<input class="input" id="origWidth" type="number" pattern="[\d]*" inputmode="numeric" value="400"
+                    oninput="resizeFunc(event);" />
+                Height:<input class="input" id="origHeight" type="number" pattern="[\d]*" inputmode="numeric"
+                    value="300" oninput="resizeFunc(event);" />
             </div>
             <div class="canvas" id="origDiv"></div>
         </div>
         <div class="innerDiv">
             <div class="areaDiv">
-                New width:<input class="input" id="newWidth" type="number" pattern="[\d]*" inputmode="numeric" value="800" oninput="resizeFunc(event);" /> New
-                height:<input class="input" id="newHeight" type="number" pattern="[\d]*" inputmode="numeric" value="600" oninput="resizeFunc(event);" />
+                New width:<input class="input" id="newWidth" type="number" pattern="[\d]*" inputmode="numeric"
+                    value="800" oninput="resizeFunc(event);" /> New
+                height:<input class="input" id="newHeight" type="number" pattern="[\d]*" inputmode="numeric" value="600"
+                    oninput="resizeFunc(event);" />
             </div>
             <div class="canvas" id="newDiv"></div>
         </div>
     </div>
-    <img class='gitLogo' target="_blank" src='github.png' title='Check out ScaleAPI at Github' onclick='gotoGithub();' />
+    <a href="https://github.com/Adir-SL/scale" target="_blank">
+        <img class='gitLogo' src='github.png' title='Check out ScaleAPI at Github' />
+    </a>
     <!-- <script src="https://adir-sl.github.io/Visual-Console/vconsole.js"></script> -->
 </body>
+
 </html>
