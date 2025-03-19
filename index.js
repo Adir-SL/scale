@@ -63,6 +63,7 @@ function zoomFunc() {
 }
 
 function zoomButtonFunc(e) {
+    // This executes when pressing the zoom buttons;
     window.zoom = e.target.innerText;
     resetSelection();
     e.target.classList.add('selected');
