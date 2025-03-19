@@ -107,6 +107,10 @@
         background-color: #ffffff;
     }
 
+    .zoomButton::after {
+        content: '%';
+    }
+
     .wrapper {
         position: relative;
         margin-left: 44px;
