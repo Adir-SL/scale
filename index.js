@@ -62,7 +62,9 @@ function zoomFunc() {
     document.getElementById("newDiv").style.width = document.getElementById("newWidth").value / zoomPercent + "px";
 }
 
-function zoomButtonFunc(event) {
+function zoomButtonFunc(e) {
+    alert(e.target.innerText);
+    window.zoom = e.target.innerText;
     resetSelection();
     zoomFunc();
 }
