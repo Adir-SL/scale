@@ -66,6 +66,7 @@ function zoomButtonFunc(e) {
     alert(e.target.innerText);
     window.zoom = e.target.innerText;
     resetSelection();
+    e.target.classList.add('selected');
     zoomFunc();
 }
 
