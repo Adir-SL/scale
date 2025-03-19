@@ -16,11 +16,11 @@ function resizeFunc(e) {
     } else {
 
         if (e.target.id == "newWidth") {
-            //Calculate HEIGHT;
+            // Calculates HEIGHT;
             scaleAPI(document.getElementById("origWidth").value, document.getElementById("origHeight").value, document.getElementById("newWidth").value, 0);
             document.getElementById("newHeight").value = window.newHeight;
         } else {
-            //Calculate WIDTH;
+            // Calculates WIDTH;
             scaleAPI(document.getElementById("origWidth").value, document.getElementById("origHeight").value, 0, document.getElementById("newHeight").value);
             document.getElementById("newWidth").value = window.newWidth;
         }
@@ -53,7 +53,7 @@ function resetSelection() {
 }
 
 function zoomFunc() {
-    //This determines the Zoom Level;
+    // This determines the Zoom Level;
     zoomPercent = 100 / window.zoom;
     document.getElementById("origDiv").style.height = document.getElementById("origHeight").value / zoomPercent + "px";
     document.getElementById("origDiv").style.width = document.getElementById("origWidth").value / zoomPercent + "px";
@@ -80,19 +80,19 @@ function gotoDemo() {
 
 function gotoTwitter() {
     window.location.href = "https://twitter.com/adircode";
-    //Please follow me on Twitter;
-    //For questions, DM me, thanks!
+    // Please follow me on Twitter;
+    // For questions, DM me, thanks!
 }
 function gotoWebsite() {
     window.location.href = "https://www.adir.dev";
-    //Link to visit my website;
+    // Link to visit my website;
 }
 function addLogo() {
-    //Adding the Github mark (Logo);
+    // Adding the Github mark (Logo);
     document.body.innerHTML += "<img class='gitLogo' src='github.png' style='position:absolute; right: 0; top: 0;margin: 44px; cursor:pointer;' onclick='gotoGithub();' />";
 }
 
-//Those 3 last functions are for debugging only
+// Those 3 last functions are for debugging only
 function printf(r) {
     console.log(r);
 }
@@ -102,4 +102,5 @@ function Toast(s) {
 function toast(t) {
     alert(t);
 }
+
 window.zoom = 100;
