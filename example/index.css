@@ -7,7 +7,7 @@
 
     .canvas {
         width: 400px;
-        height: 300px;
+        height: 200px;
         margin-bottom: 32px;
         margin-top: 8px;
         background-color: #9458DF;
@@ -19,7 +19,7 @@
     #newDiv {
         background-color: #E38FF8;
         width: 800px;
-        height: 600px;
+        height: 400px;
     }
 
     .input,
